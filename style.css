@@ -1,0 +1,58 @@
+#fondo {
+    background: #06beb6;  /*fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /*Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #48b1bf, #06beb6); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: local;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+    height: 500px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-end: 1%;
+}
+
+#fondo div{
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    text-align:center;
+    line-height: 1;
+    backdrop-filter: blur(10px);
+    
+}
+
+@media (min-width:500px){
+    #fondo div{
+        padding: 5%;
+        box-shadow: 10px 10px 5px rgb(85, 107, 117);
+    }
+
+}
+
+@media(max-width:500px){
+        #fondo div{
+            padding: 5%;
+            box-shadow:none;
+        }
+}
+
+
+#cont{
+    text-align: center;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    padding:3rem 5rem 3rem 5rem;
+    grid-gap:1rem;
+}
+
+#cont div{
+    align-self: center;
+    border: solid red 2px;
+    padding: auto;
+}
+
+#art{
+    padding: 10%;
+}
+
