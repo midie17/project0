@@ -1,18 +1,31 @@
-main {
-  top: 500px;
-}
-
-main div {
+/*Chrome 10-25, Safari 5.1-6 */
+/*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.container .row {
   text-align: justify;
-  margin: 1rem 1.5rem 1rem;
-  background: #06beb6;
-  /*fallback for old browsers */
-  /*Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#48b1bf), to(#06beb6));
-  background: linear-gradient(to right, #48b1bf, #06beb6);
-  /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 1% 1% 1% 1%;
   border-radius: 1rem;
   border: solid 1px #000;
-  padding: 1rem;
+  width: 100%;
+  padding: 5%;
+}
+
+hr, .container .row {
+  /* https://webgradients.com/*/
+  background: #06beb6;
+  /*fallback for old browsers */
+  background: #06beb6;
+  /*fallback for old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(#48b1bf), to(#06beb6));
+  background: linear-gradient(to right, #48b1bf, #06beb6);
+  margin: 1% 1% 1% 1%;
+}
+
+@media (min-height: 400px) {
+  * {
+    font-size: xx-small;
+  }
+  hr {
+    height: 5px;
+  }
 }
 /*# sourceMappingURL=variable.css.map */
