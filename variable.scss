@@ -1,0 +1,21 @@
+$justificado:justify;
+$margen-art:1rem 1.5rem 1rem;
+$degradado-chrome: -webkit-linear-gradient(to right, #48b1bf, #06beb6);
+$degradado-w3c:linear-gradient(to right, #48b1bf, #06beb6);
+$borde-1: solid 1px #000;
+
+main{
+    top:500px;
+}
+
+
+main div{
+    text-align: $justificado;
+    margin: $margen-art;
+    background:  #06beb6;  /*fallback for old browsers */
+    background: $degradado-chrome;  /*Chrome 10-25, Safari 5.1-6 */
+    background: $degradado-w3c ; /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 1rem ;
+    border: $borde-1;
+    padding: 1rem;
+}

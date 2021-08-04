@@ -2,14 +2,15 @@
     font-family: Georgia, 'Times New Roman', Times, serif; 
 }
 
-header{
+#navbar{
     position: fixed;
-    display:inline;
+    top:0;
     width: 100%;
     z-index:100;
-}
+} 
 
 main{
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -21,7 +22,7 @@ main{
     display:flex;
     align-items: center;
     justify-content: center;
-    margin-block-end: 1%;
+    /*margin-block-end: 1%;*/
 }
 
 #fondo div{
@@ -33,31 +34,12 @@ main{
 }
 
 hr{
-    
     /* https://webgradients.com/*/
     background: #06beb6;  /*fallback for old browsers */
     background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /*Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #48b1bf, #06beb6); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 1rem;
 }
-
-@media (min-width:500px){
-    #fondo div{
-        padding: 5%;
-        box-shadow: 10px 10px 5px rgb(85, 107, 117);
-
-        
-    }
-
-}
-
-@media(max-width:500px){
-        #fondo div{
-            padding: 5%;
-            box-shadow:none;
-        }
-}
-
 
 #cont{
     text-align: center;
@@ -80,4 +62,16 @@ hr{
 
 #void-form{
     font-size: xx-small;
+}
+
+
+.nota-img{
+    width: minmax(150px, 50%);
+    background-position: 45px;
+
+
+}
+
+footer{
+    margin-top: 2rem;
 }
