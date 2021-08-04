@@ -1,13 +1,22 @@
-#fondo {
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
 
-    /* https://webgradients.com/*/
-    background: #06beb6;  /*fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /*Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #48b1bf, #06beb6); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+header{
+    position: fixed;
+    display:inline;
+    width: 100%;
+    z-index:100;
+}
+
+main{
+    text-align: center;
+}
+
+#fondo {
+    background-image: url(https://www.wallpapertip.com/wmimgs/45-450828_kung-fu-panda-background.jpg);
     background-size: cover;
-    background-attachment: local;
-    font-family: Georgia, 'Times New Roman', Times, serif;  
+    background-attachment: fixed;
     height: 500px;
     display:flex;
     align-items: center;
@@ -30,13 +39,14 @@ hr{
     background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /*Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #48b1bf, #06beb6); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 1rem;
-
 }
 
 @media (min-width:500px){
     #fondo div{
         padding: 5%;
         box-shadow: 10px 10px 5px rgb(85, 107, 117);
+
+        
     }
 
 }
@@ -68,3 +78,6 @@ hr{
     padding: 10%;
 }
 
+#void-form{
+    font-size: xx-small;
+}
