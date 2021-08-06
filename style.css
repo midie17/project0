@@ -2,28 +2,46 @@
     font-family: Georgia, 'Times New Roman', Times, serif; 
 }
 
+header{
+    display: inline;
+    width: 100%;
+    background-image: linear-gradient(200deg, #fdfbfb 0%, #ebedee 100%);
+    padding: 1% 3.5% 1% auto;
+    margin:0;
+}
+
 #navbar{
     top:0;
     width: 100%;
 } 
 
-main{
-    margin-top: 5%;
-    text-align: center;
-}
-
 #fondo {
+    background-color: #fff;
     background-image: url(https://www.wallpapertip.com/wmimgs/45-450828_kung-fu-panda-background.jpg);
     background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
+    background-position-x: center;
+    background-position-y: center;
+    position: relative;
     display:flex;
     align-items: center;
     justify-content: center;
     /*margin-block-end: 1%;*/
 }
 
+@media (min-height: 400px){
+    #fondo{
+        height: 300px;
+    }
+}
+
+@media (max-height: 400px){
+    #fondo{
+        background-image: none;
+    }
+}
+
 #fondo div{
+    
     background-color: rgba(255,255,255,0.3);
     border-radius: 5px;
     text-align:center;
@@ -72,4 +90,8 @@ hr{
 
 footer{
     margin-top: 2rem;
+}
+
+h2{
+    font-family:sans-serif
 }
