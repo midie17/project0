@@ -69,3 +69,15 @@ li a, div a{
     width: auto;
     height: 10rem;
 }
+
+#cntac{
+    background-image: url(https://www.wallpapertip.com/wmimgs/45-450828_kung-fu-panda-background.jpg);
+    background-size: cover;
+}
+
+#cntac form{
+    background-color: rgba(102, 165, 154, 0.3);
+    padding: 2rem;
+    -webkit-backdrop-filter: blur(80px);
+    backdrop-filter: blur(80px);
+}
