@@ -20,9 +20,3 @@ hr, .container .row {
   margin: 1% 1% 1% 1%;
 }
 
-@media (min-height: 400px) {
-  hr {
-    height: 5px;
-  }
-}
-/*# sourceMappingURL=variable.css.map */

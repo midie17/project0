@@ -1,0 +1,45 @@
+
+@media (max-width: 400px){
+    *{
+        font-size: 85%;
+    }
+   
+    #fondo, #card_img, li>ul{
+        display: none;
+    } 
+    
+    div img{
+        display: none;
+    }
+
+    .col-12 .col-8{
+        padding: 0;
+        margin-left: 0;
+        border:none;
+    }
+}
+
+@media (min-width: 400px){
+    #col_h1:before{
+        content:"Hello world";
+    }  
+}
+
+@media (max-width:765px){
+    #notas{
+        height: 15rem;
+    }
+}
+
+
+@media all and (orientation: portrait) { 
+    #t-fq::before, #t-bio::before, #t-fis::before{
+        background-color: rgb(200, 179, 219);
+        border: 2px solid rgb(167, 208, 209);
+        content:"Rotar el dispositivo c:";
+    }
+
+    .table{
+        display:none;
+    }
+}
