@@ -33,30 +33,26 @@ hr {
   height: 10rem;
 }
 
-.col-10 .img-item {
-  height: 12rem;
-  width: auto;
-}
-
 #notas {
-  height: 38rem;
   position: sticky;
   top: -0.3px;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  background-color: rgba(26, 186, 185, 0.22);
+  margin-top: 3rem;
   text-align: center;
 }
 #notas img {
-  height: 10rem;
+  height: 6rem;
+  width: 5rem;
 }
 #notas div {
-  margin-top: 1rem;
-  padding-top: 2rem;
+  padding-top: 0.5rem;
   max-width: 200px;
-  background-color: #e8e8f1;
+  text-align: center;
 }
 #notas div p {
   text-align: center;
+  -webkit-border-after: solid #424242 1px;
+          border-block-end: solid #424242 1px;
 }
 
 li a, div a {
