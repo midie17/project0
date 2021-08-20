@@ -4,25 +4,174 @@ $degradado-chrome: -webkit-linear-gradient(to right, #48b1bf, #06beb6); /*Chrome
 $degradado-w3c:linear-gradient(to right, #48b1bf, #06beb6); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 $borde-1: solid 1px #000;
 
-
-
-.container .row{
-    text-align: $justificado;
-    margin: $margen-art;
-    border-radius: 1rem ;
-    border: $borde-1;
-    width: 100%;
-    padding: 5%;
+%fondo{
+     /* https://webgradients.com/*/
+     background:  #06beb6;  /*fallback for old browsers */
+     background: $degradado-chrome;  
+     background: $degradado-w3c ;
+     
 }
 
-hr, .container .row{
-    /* https://webgradients.com/*/
-    background: #06beb6;  /*fallback for old browsers */
-    background:  #06beb6;  /*fallback for old browsers */
-    background: $degradado-chrome;  
-    background: $degradado-w3c ;
-    margin: $margen-art;
+%nav-estilo{
+    padding:0.3rem;
+    font-size: 100%;
 }
+
+
+
+#index{
+    .container{
+        .row{
+        @extend %fondo;
+        text-align: $justificado;
+        margin: $margen-art;
+        border-radius: 1rem ;
+        border: $borde-1;
+        width: 100%;
+        padding: 5%;
+        }
+    }
+}
+
+
+hr{
+   @extend %fondo;
+   margin: $margen-art;
+   height: 1rem;
+}
+
+
+
+/*  Estilo del index y del header*/
+*{
+    font-size: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+header{
+    background-image: linear-gradient(200deg, #fdfbfb 0%, #ebedee 100%);
+    margin:0;
+    position: -webkit-sticky;
+    position: sticky;
+    top:-1px;
+    z-index:1;
+
+    a{
+    color: #000;
+    padding: 0.5rem;
+    }
+}
+
+
+
+
+.navbar{
+    @extend %fondo;
+    @extend %nav-estilo;
+    padding: 0.1em;
+
+    a, button, div{
+        @extend %nav-estilo;
+    }
+}
+
+
+
+
+
+/* Estilo de la imagen de fondo del index*/
+
+#fondo {
+    background-color: #fff;
+    background-image: url(https://www.wallpapertip.com/wmimgs/45-450828_kung-fu-panda-background.jpg);
+    background-attachment:scroll;
+    background-position: center;
+    background-size: cover;
+    height: 25rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding:3em;
+
+    div{
+        background-color: rgba(255,255,255,0.3);
+        border-radius: 5px;
+        text-align:center;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        width: auto;
+        text-align: center;
+        padding: 0.5em 1em 0.5em 1em;
+    }
+}
+
+#art{
+
+ .row{
+    margin: 2rem;
+    text-align: center;
+
+    p,h2{
+        text-align: center;
+        font-family:sans-serif;
+    }
+    
+    }
+}
+
+/*Estilo card en el index*/
+
+#card-project{
+    max-width: 400px;
+    justify-self: center;
+    
+}
+
+.card-header, .card-body{
+text-align: center;
+align-items: center;
+font-size: 80%;
+}
+
+#card_boton{
+    @extend %fondo;
+    display:inline-block;
+    color: #000;
+    padding: 0.5em;
+    margin-top: 0.4em;
+    
+}
+
+#card_boton:hover{
+    background: blue;
+    text-decoration: none;
+    color:#fff;
+}
+
+#card_img{
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    margin-top: 16rem;
+    margin-block-end: 0;
+}
+
+
+
 
 
 

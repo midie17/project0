@@ -1,7 +1,7 @@
 .img-contenido img{
     height:auto;
-    width:90%;
-    margin:0.1rem 2rem 2rem;
+    width:100%;
+    margin:0.1rem;
 }
 
 .row p{
@@ -45,12 +45,18 @@ hr{
     top: -0.3px;
     overflow-y:scroll;
     overflow-x: hidden;
+    border-left: solid rgb(6, 47, 66) 3px;
+}
+
+#notas img{
+    height: 80px;
 }
 
 #notas>div{
-    margin-top: 1em;
-    border: 1px solid #000;
+    margin-top: 1rem;
+    padding-top: 2rem;
     max-width:200px;
+    background-color: rgb(232, 232, 241);
 }
 
 li a, div a{

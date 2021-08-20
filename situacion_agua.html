@@ -7,10 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="variables.css">
-  <link rel="stylesheet" href="contenido.css">
-  <link rel="stylesheet" href="medias.css">
+  <link rel="stylesheet" href="variable.css">
+  <link rel="stylesheet" href="paginas.css">
+  <link rel="stylesheet" href="responsive.css">
   <link rel="icon" type="image/png" href="https://image.flaticon.com/icons/png/512/1867/1867431.png" />
   <title>El agua: Situación en Nicaragua</title>
 </head>
@@ -47,16 +46,6 @@
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Contaminación
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="residual.html">Tratamiento de aguas residuales</a>
-              <a class="dropdown-item" href="lact.html">Impacto lácteo</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Normas
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -76,29 +65,78 @@
 
   <main class="container">
 
-    <div class="row justify-content-center">
-        <div class="col-10">
+    <div class="row justify-content-between">
 
-            <h1>El agua: Situación en Nicaragua</h1>
+      <div class="col-12 col-md-8">
+        
+
+        <h1>El agua: Situación en Nicaragua</h1>
             <h6>Tomado del último Boletín Informativo: El agua, realizado por la OPS-OMS en 2015.</h6>
+          
             <hr>
-
+            <br>
             <p>La hidrografía del pais se divide en dos vertientes: vertiente del pacifico (representa el 9% del territorio nacional) y la vertiente del atlántico (ocupa el restante 91% del territorio), este sistema descansa en una rica red de aguas superficiales.</p>
 
             <p>El pais cuenta con un total de 21 cuencas hidrográficas, de las cuales 13 drenan hacia la vertiente del atlántico y 8 hacia la veriente del pacifico.</p>
             <p>En el 2015 se estimaba que se suministraban anualmente, cerca de 220 millones de metros cúbicos a la población, de ellos, el 82% eran de origen subterráneo, el otro 18% provenía de otro tipo de fuente (agua superficial o cosecha de agua de lluvia).</p>
             <p>A pesar de tener alta disponibilidad de agua por habitante, la calidad de los recursos hídricos se ha deteriorado en todo el pais, especialmente en las zonas urbanas.</p>
             <p>Entre 1960-2010, la cobertura de agua para consumo humano pasó del 21% al 85%, alcanzando el objetivo de Desarrollo del Milenio 7 (ODM). Mientras, en 1971, apenas el 38.7% de las viviendas totales del pais tenían servicio de agua potable, conectado al servicio público, privado o através de una tubería en la vivienda.</p>
-            <p>Ambas cifras fueron superadas en el 2005, cuando se alcanzó una cobertura del 80.3%, de esta, que cubría el 93.1% de las áreas urbanas y el 63.45% de las áreas rurales.</p>
+            <p>Ambas cifras fueron superadas en el 2005, cuando se alcanzó una cobertura del 80.3%, que cubría el 93.1% de las áreas urbanas y el 63.45% de las áreas rurales.</p>
             <p>El abastecimiento de agua se debe en 70% a fuentes subterráneas y el restante proviene de agua superficial o sub-superficial. En las épocas entre noviembre-abril, el 42% de las fuentes de agua subterránea no posee suficiente cantidad de líquido.</p>
             <p>Un promedio de 200 personas por sistema de agua se encuentran expuestas al consumo de Arsénico como consecuencia de la contaminación de los puntos de abastecimiento, especialmete los que se encuentran en el corredor seco del país.</p>
 
+
+
+      </div>
+
+      <div class="col-12 col-md-3">
+
+        <div class="row" id="notas">
+          <h2 class="col-md-12">Notas</h2>
+          <div class="col-4 col-md-12">
+            <a href="convencional-t.html">
+              <div class="img-contenido">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="ptap">
+              </div>
+              <p>Tratamiento convencional</p>
+            </a>
+          </div>
+
+
+
+          <div class="col-4 col-md-12">
+            <a href="normas.html">
+
+              <div class="img-contenido">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAACRCAMAAAAsJsxeAAAAXVBMVEX+/v4AAABRUVEYGBiVlZXHx8fn5+cQEBBBQUFqamq+vr6urq7X19cgICA4ODjv7+9ycnJZWVkoKCh6enrf39+NjY0wMDCFhYWmpqbPz8+dnZ1iYmJJSUm2trb39/edc4ZTAAAH6klEQVR4nO1bi3KjOgxFtvGD9xuSdPf/P/PKsiGmTbcbtzB7Z6Kd2aYpQZYtHUlHJEle8u9IWhbnKmzAnKvQAD9XYQWQn6mvBoDxTIUZKtRnK5zOVDijQjhTYWkVnhiJqdV3ptfMwPEUTwz9CljCoTpN3wDQJsWJWJMDpElC/50jV4A6SdR54MZwR63niLMUlhQROXrOScJB4v8SupP0pQ636+ksrzF+L09Lwq13z5yc9QSpYKCfiKjZKQq3TAhwO0NfuoUDA2/rsaLh6l9dT8kYPcDl/lodr7AkXPMCBAGHCibeAELV8X7a77KSPv4Q9a4ebUAdvaewT0oQnugR0r8LPQPqUHiT5bvSScKxaZh9gM/boadYf2xh0OYDTRwBlvfv9UdGxvSgg5EHJilMgP3Hd5vjGjf2sAmVh3Xf+Se1tjmofJP8E/dID4pF82l+b6A8QB/GYPPJn4pDTOzh7VNIMQ/i87uS8j8VodrXHekPIPlIu1V3f/T9C7hSDtS3q/+G7jTwL8r6ypEa/NtdKpYwc2Kr+68Qk1FRjBHyllz+fOWfxFj0rGob8l8xCNLCbMHQxJFHO1ABno+pQAUsUPHQMzLo68p9IJqFE+7zE/Zlv/xdNb3DJz2m2Tu9JWwSqxDzO7jb+JAv0CWGeshGw0lvFXpIrVZ90QQOxnNpWHfHkQXaW8vmC9o2pOPcTzYxDetuz8AEc3saBTxSSij7MmO0RfKSL1IA13RL1z/VDNEVqwBuMouyEirZeyNj6hyj3IGhw0hD27VGRjazPEnHVrXYR03X2f6xbC82T627+itCIbqcGu29uqQv+7yQ1Z0+rLk9QcKeqkgK7pYj724TU3XYoGDOYxh9vgz2qfA+WozWobBRhGtNkPoNP93Wq1vqAtMwvAYNFN+4Is6EAWet2BRGhKKw5+HDjqBjCWqly2pGftOsLSe/gzVfFUY0qqiPOSf3eJwGaFobVnUP0BVdVpWRe2qVTWSfpyrkX7h6tloYUTmun8WKLGcNa0RIcRfM1YZsSIYO9KiZrpiCNQrxLCICUeDe4JlMvfe9oAaup/amjXWS3GYSL2VeZxu8PV05VgaBbGlw1XkXniTJ4rpQ9GMux01hl1L/GBkYWhVuWPAbkz7wBrv5dJmbuZ8RxVpXFtrwM/fYs9dO68unudR0c3Dc2cW9AoIuDBKMO8FWH+6G9WJEhm1Ln6806Hb6tq1+2nCyTeqbjfdpKhANtD1bYxym447+MlEWyka2gDC5+XkgNv7S92C5XljZpaqIWrxrBCJwcSNP3csD3mIQCsqlSDX0WMCCYs87jS1PUoJTZlq1U/ihRqoNNIWhuISy2ix9Tu57iQm90DfGePBGKBfE8RxbD/vakGtZB3t+9ObP/j5Ek6ud+6nawLm1TZLCEnzGiJgwkKvPqHfD6KJzJdW+YGkZZcbaFswFYii2kcC657mUFDGmQl+Tob91D86Q+1uP6GM9GGmxDmP36TjEMyykzfa34LNS0UZfg+uuW1OVTRZ0uHbo9jx446cri8EsxGF+P6C0Raxpq7BLxfWtZULEGf7aR7oTlxpU28we13Y8Ctc04EfpYubDMrfxN9d5uIdSsF1QhlxihqfoFGZRVNGQy4Iydws8ZBPWCOXYw4UbKqdSjGu2iFFIAaVySj96z1/IhqIj21Het8DuOI5hXa0e+d5GKwtFe1BHNWC2XBzZBdem4zbS35KMfzXXykrcXXuAXRfZyqyCwKGp/Jsf/bXw7fVCW2zBiU3fGbkNbaUVqFnb+Ose0Rguvu+VjJVv9Pj3rlZbN6keR1fDAXPTdum3qEW53kbbLIT7+hGxLswlP/UT+oJaCl9frfauuUeCbHi1IpH4GX3JVufSbuYUKawxNzb3rCKjmEseHup+YGySul1dS4al2jmIJ6gK/+6PPO1mz5EreMM+PsvFgmapSmtd3TyoiH6xXUE3qc780AjDAkceWOXyldhZ+vOPZL2Ft2dm3ldy1XeC77HU98PTzfta9ZinMrL0mi/pJcN6nCk0MEtFg32hZvOP08HvhFmLBC/PebwFq3/VW3zGuk41h8+ciUzxdUz6ff73b0RoseafS3873sKXvOQlL3nJS17ykpe85N+QIRnSLCVmqs5S+lfQb7/db2LJIpsOmpEzMbrWT3q6YOO32q2x9/1a0L7FUAuCA2dzuTW3bGXzUYvJhKL3aSxF3OnkhsZKLDOLUpj7zhp7JNf9bV2nIJ7ENtyp1WHZBkO/2GdSaBTbRvQ4BWyTWDcBxgV4tv1Kttkp8JW4U7cGy/VrUrgIqZ4naAVsJKsbxbJtBTPRsgWdVOEYHHuuA01zcFcqkUSQJxr2jwgRed6vFhrSwQeycEhy7qYnPR5lIeKeANPvhqp9bu9K3m+pSvtEyCQdHU10xuJtv6/rSZneMRPOI4nYslwlbzvqtosdH2UZx5I/Zla/km5Pm6WlzDo/LEc71EpID/a1AT8eso/DJEMXZWEL4QioDgN6DtdCvtX5PWVkapMnNXs6Li7riSW1GJKxu6ZZ1rtFzMFw0K6kppmKugSr7CO+17aeGEXxRJ+33Gnjony9KnO2VQ7p8AdPkyFnUd/cw/t2o2i5Emgtv67c16QCKs+yiIBRTqPFcptKQ9yXaSQ9acXzJGWaSKe5mYWVRrQeK6UQvRA2PPJezGKcG9O0o2HXWDZlOPnbxf+YnPMVpP+Z/AeaPkTu1kXrUAAAAABJRU5ErkJggg=="
+                  alt="normas CAPRE">
+              </div>
+              <p>Normas de calidad del agua potable</p>
+            </a>
+          </div>
+
+          <div class="col-4 col-md-12">
+            <a href="agua_potable.html">
+
+              <div class="img-contenido">
+                <img
+                  src="https://cdn.pixabay.com/photo/2016/09/21/14/46/faucet-1684902_960_720.jpg" alt="grifo">
+              </div>
+              <p>Calidad del agua potable</p>
+            </a>
+          </div>
+
+
+          
+          
+
         </div>
 
-     
-
-
-
+      </div>
+      
     </div>
 
 

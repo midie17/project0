@@ -1,0 +1,88 @@
+.img-contenido img {
+  height: auto;
+  width: 100%;
+  margin: 0.1rem;
+}
+
+.row p {
+  text-align: justify;
+}
+.row h1, .row h2, .row h3 {
+  font-size: 150%;
+  color: #191930;
+  text-shadow: #000;
+  margin-top: 2rem;
+}
+
+hr {
+  background: #3e3e6e;
+  height: 0.5rem;
+}
+
+.col-12 .col-8 {
+  border: solid 2px #6c878b;
+  padding: 1em;
+}
+
+.img-item {
+  width: 100%;
+  height: 100%;
+}
+.img-item img {
+  width: auto;
+  height: 10rem;
+}
+
+.col-10 .img-item {
+  height: 12rem;
+  width: auto;
+}
+
+#notas {
+  height: 38rem;
+  position: sticky;
+  top: -0.3px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-align: center;
+}
+#notas img {
+  height: 10rem;
+}
+#notas div {
+  margin-top: 1rem;
+  padding-top: 2rem;
+  max-width: 200px;
+  background-color: #e8e8f1;
+}
+#notas div p {
+  text-align: center;
+}
+
+li a, div a {
+  color: #000;
+  text-decoration: none;
+}
+li a:hover, div a:hover {
+  color: #281c57;
+  text-decoration: none;
+}
+
+.col-6 img {
+  width: 100%;
+  height: 50%;
+}
+
+/*
+#cntac{
+    background-image: url(https://www.wallpapertip.com/wmimgs/45-450828_kung-fu-panda-background.jpg);
+    background-size: cover;
+}
+
+#cntac form{
+    background-color: rgba(102, 165, 154, 0.3);
+    padding: 2rem;
+    -webkit-backdrop-filter: blur(80px);
+    backdrop-filter: blur(80px);
+}
+*//*# sourceMappingURL=paginas.css.map */

@@ -1,0 +1,31 @@
+@media (max-width: 450px) {
+  * {
+    font-size: 85%;
+  }
+
+  #fondo, #card_img, li > ul {
+    display: none;
+  }
+
+  .col-12 .col-8 {
+    padding: 0;
+    margin-left: 0;
+    border: none;
+  }
+}
+@media (max-width: 765px) {
+  #notas {
+    height: 20rem;
+  }
+}
+@media all and (orientation: portrait) {
+  #t-fq::before, #t-bio::before, #t-fis::before {
+    background-color: #c8b3db;
+    border: 2px solid #a7d0d1;
+    content: "Rotar el dispositivo c:";
+  }
+
+  .table {
+    display: none;
+  }
+}/*# sourceMappingURL=responsive.css.map */
